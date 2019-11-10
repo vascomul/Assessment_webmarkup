@@ -5,6 +5,11 @@ img {
   height: auto;
   }
 
+  img:hover {
+    webkit-filter: blur(4px);
+    filter: blur(4px);
+}
+
   body{
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
@@ -14,7 +19,6 @@ img {
   p{
     color: #ffffff;
     font-size: 17px;
-    font-family: 'Raleway', sans-serif;
   }
 
   h1{
