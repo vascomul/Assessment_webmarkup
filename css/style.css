@@ -1,4 +1,142 @@
-body{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15pt;
+/* Picture width and height */
+img {
+  max-width: 30%;
+  height: auto;
+  }
+
+  body{
+    margin-top: 50px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(0,0,0,0);
+  }
+
+  p{
+    color: #ffffff;
+    font-size: 17px;
+  }
+
+  h1{
+    color: #ffffff;
+    font-size: 2em;
+  }
+
+  h2{
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+
+  form{
+    color: #ffffff;
+  }
+
+  footer{
+    color: #ffffff;
+  }
+
+  nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+.copyright{
+  text-align: center;
+}
+
+  .submit{
+    display: block;
+}
+
+  /* Add a black background color to the top navigation */
+  .topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  /* Style the content */
+section {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: rgba(0,0,0,0);
+  padding: 10px;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+input[type=name] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=message] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+#cookie-check:checked + .cookie{
+  display: none;
+}
+#cookie-check{
+  display: none;
+}
+.cookie{
+  position: fixed;
+  background-color: #AAAAAA;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
 }
